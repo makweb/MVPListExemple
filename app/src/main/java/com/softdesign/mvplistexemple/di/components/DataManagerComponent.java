@@ -1,6 +1,6 @@
 package com.softdesign.mvplistexemple.di.components;
 
-import com.softdesign.mvplistexemple.data.managers.DataManger;
+import com.softdesign.mvplistexemple.data.managers.DataManager;
 import com.softdesign.mvplistexemple.di.modules.DataManagerModule;
 
 import javax.inject.Singleton;
@@ -13,5 +13,5 @@ import dagger.Component;
 @Component(/*dependencies = App.Component.class,*/ modules = DataManagerModule.class)
 @Singleton
 public interface DataManagerComponent {
-    void inject (DataManger dataManager);
+    void inject (DataManager dataManager);
 }

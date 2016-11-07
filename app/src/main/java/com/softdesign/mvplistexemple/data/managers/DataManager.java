@@ -13,10 +13,10 @@ import java.util.List;
  * Created by Makweb on 04.11.2016.
  */
 
-public class DataManger {
+public class DataManager {
     private List<UserDto> mUserList = new ArrayList<>();
 
-    public DataManger() {
+    public DataManager() {
         DataManagerComponent component = DaggerService.getComponent(DataManagerComponent.class);
         if (component == null) {
             component = createDaggercomponent();

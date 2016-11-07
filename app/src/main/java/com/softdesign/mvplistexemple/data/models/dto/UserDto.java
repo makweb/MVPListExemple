@@ -23,7 +23,7 @@ public class UserDto {
         this.color = Color.rgb(rnd.nextInt(255), rnd.nextInt(255), rnd.nextInt(255));
     }
 
-    public String getFirstName() {
+    public String getFullName() {
         return firstName + " " + lastName;
     }
 
@@ -33,7 +33,7 @@ public class UserDto {
     }
 
     public String getAbbrivation() {
-        return String.valueOf(firstName.charAt(0) + lastName.charAt(0)).toUpperCase();
+        return (firstName.substring(0,1) + lastName.substring(0,1)).toUpperCase();
     }
 
     public int getColor() {
